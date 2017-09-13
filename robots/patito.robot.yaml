@@ -1,0 +1,8 @@
+owner: diaz
+hostname: patito
+username: mdiaz
+description: >
+    Manfred Diaz's car.
+log:
+    2017-09-13: >
+        Initial commit.        
