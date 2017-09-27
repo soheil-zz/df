@@ -1,9 +1,15 @@
 <launch>
-	<node name="talker" pkg="pkg_name" type="talker.py" output="screen">
-		<!-- Setup parameters -->
-		<param name="~pub_timestep" value="0.5"/>
-		<!-- Remapping topics -->
-		<remap from="~topic_b" to="~topic_a"/>
-		<!-- <remap from="~topic_b" to="talker/topic_a"/> -->
-	</node>
+    <arg name="veh" default="pontiac" doc="Name of vehicle. ex: megaman"/>
+
+    <arg name="pkg_name" value="dt-live-instagram_shamrock"/>
+    <arg name="node_name" default="dt-live-instagram_shamrock_node"/>
+
+    <group ns="$(arg veh)">        
+        <!-- run local -->
+        <node if="$(arg local)" name="$(arg node_name)" pkg="$(arg pkg_name)" type="$(arg node_name).py" output="screen" clear_params="true" required="true">
+        </node>
+
+    </group>
+
+    
 </launch>
