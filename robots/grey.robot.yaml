@@ -1,0 +1,8 @@
+owner: napatkarn
+hostname: grey
+username: patkarn
+description: >
+    Pat's car.
+log:
+    2017-10-07: >
+      Initialised duckiebot
