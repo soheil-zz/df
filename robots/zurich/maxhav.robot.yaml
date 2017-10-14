@@ -1,7 +1,7 @@
 owner: ChristophZuidema
 hostname: maxhav
 username: chris
-description: duckietown robot of christoph zuidema
+description: duckie robot of christoph zuidema
 log:
     2017-10-14: >
-        Created yaml description of robot
+        Created yaml file
