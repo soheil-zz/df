@@ -1,7 +1,0 @@
-owner: marcel
-hostname: r2duck2
-username: ubuntu
-description: Marcel's car.
-log:
-    2017-08-01: >
-        Init robot r2duck2.
